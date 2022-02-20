@@ -1,4 +1,93 @@
-.facebook-logo {
-    font-size: 50px;
-    color: blue;
+/* * {
+    /* width: 1024px;
+    margin: 0 auto; 
+}*/
+
+:root {
+    --light-orange: #ffedd5;
+    --dark-orange: #f97216;
+    --light-gray: #eceaeb;
+}
+
+.header {
+    height: 799px;
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav {
+    height: 100px;
+    width: 1024px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.logo {
+    width: 341px;
+    height: 100%;
+}
+
+img {
+    position: relative;
+    right: 120px;
+    top: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.links {
+    width: 342px;
+    height: 100%;
+}
+
+.header_nav__links {
+    color: #585552;
+    text-decoration: underline;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin-right: 15px;
+    position: relative;
+    left: 53px;
+    top: 54px;
+}
+
+.header_nav__links:hover {
+    color: #1c1917;
+}
+
+.num {
+    width: 341px;
+    height: 100%;
+    font-size: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    left: 53px;
+    top: 10px;
+    padding-right: 55px;
+}
+
+.phone {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #3b3838;
+}
+
+.icon {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.main {
+    background-color: #ffffff;
+    height: 900px;
 }
