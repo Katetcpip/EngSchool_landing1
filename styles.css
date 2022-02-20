@@ -1,8 +1,3 @@
-/* * {
-    /* width: 1024px;
-    margin: 0 auto; 
-}*/
-
 :root {
     --light-orange: #ffedd5;
     --dark-orange: #f97216;
@@ -34,7 +29,7 @@
 
 img {
     position: relative;
-    right: 120px;
+    right: 110px;
     top: 10px;
     height: 100%;
     width: 100%;
@@ -90,4 +85,47 @@ img {
 .main {
     background-color: #ffffff;
     height: 900px;
+}
+
+.info {
+    width: 1024px;
+    height: 699px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero-title {
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.hero-text {
+    color: #585552;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.button-first {
+    border: #1c1917;
+    border-radius: 7px;
+    background-color: var(--dark-orange);
+    color: white;
+    height: 55px;
+    width: 330px;
+    font-size: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    padding: auto;
+}
+
+.button-first:hover {
+    background-color: #ea580c;
 }
