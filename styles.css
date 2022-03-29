@@ -516,7 +516,7 @@ img {
         padding-top: 10px;
     }
     .section-title {
-        width: 300px;
+        width: 400px;
         flex-wrap: wrap;
     }
     .about-title {
@@ -574,7 +574,7 @@ img {
     }
     .header {
         background-position: 50% 100%;
-        padding-left: 115px;
+        padding-left: 35px;
         padding-right: 100px;
     }
     .logo {
@@ -592,5 +592,9 @@ img {
     .hero-text {
         width: 200px;
         flex-wrap: wrap;
+    }
+    .main {
+        padding-left: -20px;
+        padding-right: -20px;
     }
 }
