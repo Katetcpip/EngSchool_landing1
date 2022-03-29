@@ -4,12 +4,9 @@
     --light-gray: #eceaeb;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 .header {
-    height: 799px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-image: url('images/hero.jpg');
     background-size: cover;
     display: flex;
@@ -19,29 +16,31 @@ body {
 }
 
 .nav {
-    height: 100px;
-    width: 1024px;
+    max-width: 1024px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    padding-top: 40px;
 }
 
 .logo {
-    width: 341px;
-    height: 100%;
+    width: calc(1024px / 3);
+    height: 90px;
 }
 
 img {
     position: relative;
-    right: 110px;
     top: 10px;
     height: 100%;
     width: 100%;
+    margin-top: -40px;
 }
 
 .links {
-    width: 342px;
+    width: calc(1024px / 3);
     height: 100%;
+    margin-top: -40px;
 }
 
 .header_nav__links {
@@ -88,12 +87,15 @@ img {
 
 .main {
     background-color: #ffffff;
-    height: 900px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .info {
-    width: 1024px;
-    height: 699px;
+    max-width: 1024px;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -138,7 +140,8 @@ img {
 .main {
     background-color: white;
     width: 100%;
-    height: 900px;
+    padding-top: 5px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -155,7 +158,8 @@ img {
 }
 
 .benefs {
-    width: 1024px;
+    max-width: 1024px;
+    width: 100%;
     height: 212px;
     margin-top: 70px;
     display: flex;
@@ -193,7 +197,8 @@ img {
 }
 
 .about-us {
-    width: 1024px;
+    max-width: 1024px;
+    width: 100%;
     margin-top: 60px;
     display: flex;
     flex-direction: row;
@@ -228,7 +233,6 @@ img {
     align-items: center;
     object-fit: cover;
     position: relative;
-    left: 150px;
     top: 27px;
 }
 
@@ -250,7 +254,8 @@ img {
 }
 
 .orange {
-    height: 450px;
+    padding-top: 110px;
+    padding-bottom: 110px;
     background-color: var(--light-orange);
     display: flex;
     flex-direction: column;
@@ -279,7 +284,8 @@ img {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 1024px;
+    max-width: 1024px;
+    width: 100%;
     margin-top: 25px;
 }
 
@@ -319,8 +325,8 @@ img {
 }
 
 .rewiews-gray {
-    height: 700px;
-    padding-top: 30px;
+    padding-top: 70px;
+    padding-bottom: 50px;
     background-color: #fafaf9;
     display: flex;
     flex-direction: column;
@@ -336,11 +342,14 @@ img {
 }
 
 .rews {
-    width: 1024px;
+    max-width: 1024px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 140px;
+    padding-bottom: 90px;
 }
 
 .review-title {
@@ -371,7 +380,6 @@ img {
 
 .abonements {
     width: 100%;
-    height: 440px;
     padding-top: 100px;
     background-color: white;
     display: flex;
@@ -382,7 +390,8 @@ img {
 }
 
 .abonements__box {
-    width: 1024px;
+    max-width: 1024px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -421,7 +430,8 @@ img {
 }
 
 .footer_content {
-    height: 150px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     background-color: var(--light-gray);
     display: flex;
     flex-direction: row;
@@ -480,4 +490,107 @@ img {
 
 .abonements_button:hover {
     background-color: #fccc8d;
+}
+
+@media (max-width: 600px) {
+    body {
+        width: 600px;
+    }
+    .abonements__box {
+        flex-direction: column;
+    }
+    .nav {
+        flex-wrap: wrap;
+    }
+    .hero-title {
+        font-size: 60px;
+        width: 330px;
+        flex-wrap: wrap;
+    }
+    .benefs {
+        flex-direction: column;
+    }
+    .ben {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+    .section-title {
+        width: 300px;
+        flex-wrap: wrap;
+    }
+    .about-title {
+        width: 450px;
+        flex-wrap: wrap;
+    }
+    .about-us {
+        flex-direction: column;
+    }
+    .orange-title {
+        width: 450px;
+        flex-wrap: wrap;
+    }
+    .orange-text {
+        width: 410px;
+        flex-wrap: wrap;
+    }
+    .form {
+        flex-direction: column;
+    }
+    .form-button {
+        width: 340px;
+        margin-left: -10px;
+    }
+    .input {
+        width: 330px;
+        margin-bottom: -10px;
+    }
+    .gray-title {
+        width: 450px;
+        flex-wrap: wrap;
+    }
+    .review-text {
+        width: 400px;
+        flex-wrap: wrap;
+        padding-left: 10px;
+    }
+    .review-title {
+        padding-left: 10px;
+    }
+    .abonements__box_example {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .footer_content {
+        flex-direction: column;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .email-tel {
+        margin-top: 30px;
+    }
+    .email-tel {
+        margin-bottom: 30px;
+    }
+    .header {
+        background-position: 50% 100%;
+        padding-left: 115px;
+        padding-right: 100px;
+    }
+    .logo {
+        width: calc(600px / 3);
+        margin-left: -40px;
+    }
+    .links {
+        width: calc(600px / 3);
+    }
+    .num {
+        width: calc(600px / 3);
+        margin-left: -70px;
+        margin-top: -40px;
+    }
+    .hero-text {
+        width: 200px;
+        flex-wrap: wrap;
+    }
 }
